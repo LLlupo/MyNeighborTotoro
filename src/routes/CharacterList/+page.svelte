@@ -1,6 +1,3 @@
-<svelte:head>
-    <title>TotoroWiki</title>
-</svelte:head>
 <div class="content">
     <h1 class="main-title">Персонажи</h1>
     <div class="cards">
@@ -8,7 +5,13 @@
             <div class="card">
                 <img src="{page.image}" alt="{page.title}" class="card-image">
                 <h2 class="card-title">{page.title}</h2>
-                <p>{page.body}</p>
+                <p>
+                    {#if page.body}
+                        {page.body}
+                    {:else}
+                        Описание к этому персонажу еще не было добавлено
+                    {/if}
+                </p>
                 {#if page.readMore}
                     <p class="readmore">
                         <a class="link" href={`/CharacterList/characters/${page.id}`}>Подробнее</a>
@@ -41,7 +44,7 @@
     }
     .card {
         padding: 10px;
-        width: 300px;
+        max-width: 300px;   
         display: flex;
         flex-direction: column;
         border-radius: 10px;
@@ -55,7 +58,7 @@
     }
     .card-image {
         margin: 0 auto;
-        width: 200px;
+        max-width: 200px;
         border-radius: 10px;
     }
     .card-title {

@@ -1,17 +1,19 @@
 <div class="container">
-    <a href="/" class="back-link"><img src="\src\img\back.png" alt="Назад" class="back"></a>
+    <a href="../" class="back-link"><img src="\src\img\back.png" alt="Назад" class="back"></a>
     <div class="content">
         <slot />
     </div>
 </div>
 <style>
     .back {
-        max-width: 200px;
+        max-height: 200px;
+        max-width: 100%;
         margin: auto 10px;
     }
     .back-link {
         width: fit-content;
         height: fit-content;
+        transition: all ease-in 0.5s;
     }
     .back-link:hover {
         box-shadow: 0 0 10px 5px #e4ffd4;
