@@ -1,5 +1,5 @@
 <div class="container">
-    <a href="../" class="back-link"><img src="\src\img\back.png" alt="Назад" class="back"></a>
+    <a href="../" class="back-link"><img src="\img\back.png" alt="Назад" class="back"></a>
     <div class="content">
         <slot />
     </div>

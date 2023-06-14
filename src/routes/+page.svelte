@@ -8,22 +8,22 @@
         {
             title: 'plot',
             href: '/plot',
-            img: 'src/img/plot.png',
+            img: '/img/plot.png',
             alt: 'Сюжет',
             
         },
         {
             title: 'characterlist',
             href: '/CharacterList',
-            img: 'src/img/characters.png',
+            img: '/img/characters.png',
             alt: 'Персонажи',
             
         },
         {
             title: 'frames',
             href: '/frames',
-            img: 'src/img/frames.png',
-            alt: 'third',
+            img: '/img/frames.png',
+            alt: 'frames',
             
         },
     ]

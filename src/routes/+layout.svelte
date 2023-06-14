@@ -1,7 +1,7 @@
 <nav>
     <div class="nav-container">
         <a href="/" class="nav-logo" title="Back to Homepage">
-            <img src="src/img/logo.png" alt="logo"/>
+            <img src="/img/logo.png" alt="logo"/>
         </a>
     </div>
 </nav>
